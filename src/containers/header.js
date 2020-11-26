@@ -6,7 +6,8 @@ export function HeaderContainer() {
     <>
       <Header>
         <Header.BackgroundImage>Its the header</Header.BackgroundImage>
-        <Header.Logo>its a logo</Header.Logo>
+        
+        <Header.Logo src="/home/richard/coding/react/webshop/src/logo1.png" />
       </Header>
     </>
   );
