@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import { Link as ReactRouterLink } from "react-router-dom"
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const BackgroundImage = styled.div`
-    text-align: left;
+  text-align: left;
 `;
 
 export const Container = styled.div`
@@ -11,7 +11,6 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
+  width: 200;
+  height: 200;
 `;
-
-export const LogoLink = styled(ReactRouterLink)`
-` 

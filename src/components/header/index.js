@@ -1,20 +1,22 @@
 import React from 'react';
-import { Container, BackgroundImage, LogoLink, Logo } from './styles/header';
+import { Container, BackgroundImage, Logo } from './styles/header';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
-
-export default function Header({ children, ...restProps}) {
+export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
 
-Header.BackgroundImage = function HeaderBackgroundImage({ children, ...restProps }) {
-  return <BackgroundImage {...restProps} >{children}</BackgroundImage>
+Header.BackgroundImage = function HeaderBackgroundImage({
+  children,
+  ...restProps
+}) {
+  return <BackgroundImage {...restProps}>{children}</BackgroundImage>;
 };
 
-Header.LogoLink = function HeaderLogoLink({src, children, ...restProps }) {
+Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
-    <LogoLink {...restProps}>
-      <Logo />
-    </LogoLink>
-  )
-  
+    <ReactRouterLink to={to}>
+      <Logo {...restProps} />
+    </ReactRouterLink>
+  );
 };
