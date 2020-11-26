@@ -7,8 +7,7 @@ export function HeaderContainer() {
   return (
     <>
       <Header>
-        <Header.BackgroundImage>Its the header</Header.BackgroundImage>
-        <Header.Logo alt="orange" src={logo1} to={ROUTES.HOME}/>
+        <Header.Logo alt="healthy life logo" src={logo1} to={ROUTES.HOME}/>
       </Header>
     </>
   );

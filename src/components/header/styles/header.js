@@ -1,16 +1,17 @@
 import styled from 'styled-components/macro';
-import { Link as ReactRouterLink } from 'react-router-dom';
+// import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const BackgroundImage = styled.div`
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background: url('/public/pictures/header/fruitveg.jpeg') top left / cover
+    no-repeat;
 `;
 
-export const Container = styled.div`
-  text-align: center;
-  font-weight: bold;
-`;
+
 
 export const Logo = styled.img`
-  width: 200;
-  height: 200;
+  float: left;
+  width: 50px;
+  height: 50px;
 `;
