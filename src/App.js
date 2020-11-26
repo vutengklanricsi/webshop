@@ -1,10 +1,16 @@
-// import { Home } from "./pages/home";
+import React from 'react';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import * as ROUTES from './constants/routes';
+import { Home } from './pages/index';
 
 function App() {
   return (
     <>
-    Hello
-      {/* <Home /> */}
+      <BrowserRouter>
+        <Switch exact path={ROUTES.HOME}>
+          <Home />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }

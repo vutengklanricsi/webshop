@@ -1,10 +1,11 @@
-import React from "react";
-import { Header } from "../components/index";
+import React from 'react';
+import { Header } from '../components/index';
 
 export function HeaderContainer() {
   return (
-    <Header>
-      <Header.Logo />
-    </Header>
+    <>
+      <Header>Hello</Header>
+      <Header.BackgroundImage>Its the header</Header.BackgroundImage>
+    </>
   );
 }
