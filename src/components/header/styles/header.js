@@ -8,3 +8,8 @@ export const Container = styled.div`
   text-align: center;
   font-weight: bold;
 `;
+
+export const Logo = styled.div`
+  text-align: center;
+  text-weight: center
+`;
