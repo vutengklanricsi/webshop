@@ -8,8 +8,6 @@ export const BackgroundImage = styled.div`
     no-repeat;
 `;
 
-
-
 export const Logo = styled.img`
   float: left;
   width: 50px;

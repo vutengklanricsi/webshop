@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello</p>
+    <p id="test"></p>
+    
+</body>
+<script>
+    const text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+    const splitText = text.split(" ");
+    const a = "";
+    console.log(a)
+    for (let i = 0; i < splitText.length; i++) {
+        // const element = array[index];
+        console.log("works")
+        if ( i % 5   ) {
+            splitText[i] += "<br>"
+        }
+    }
+    console.log(splitText);
+
+    document.getElementById("test").innerHTML = splitText;
+
+</script>
+</html>
