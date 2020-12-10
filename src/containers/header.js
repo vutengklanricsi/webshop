@@ -8,7 +8,10 @@ export function HeaderContainer() {
   return (
     <>
       <Header>
-        <Header.Logo alt="healthy life logo" src={logo1} to={ROUTES.HOME} />
+        <Header.Container>
+          <Header.Logo alt="healthy life logo" src={logo1} to={ROUTES.HOME} />
+          <p>fwjekfbkwefbkj</p>
+        </Header.Container>
       </Header>
       <NavbarContainer />
     </>
