@@ -1,9 +1,21 @@
 import React from 'react';
-import { Button, Text, Title, Frame, Input, Break } from './styles/form';
+import {
+  Button,
+  Text,
+  Title,
+  Frame,
+  Input,
+  Break,
+  Base,
+} from './styles/form';
 
 export default function Form({ children, ...restProps }) {
   return <Frame {...restProps}>{children}</Frame>;
 }
+
+Form.Base = function FormBase({ children, ...restProps }) {
+  return <Base {...restProps}>{children}</Base>;
+};
 
 Form.Input = function FormInput({ ...restProps }) {
   return <Input {...restProps} />;
