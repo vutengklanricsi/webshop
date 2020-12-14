@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 export const Container = styled.div`
 	display: flex;
 	flex-direction: row-reverse;
-	background-color: #693614;
+	background-color: #503004;
 	flex-wrap: wrap;
 `;
 
