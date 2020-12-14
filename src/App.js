@@ -8,16 +8,11 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route exact path={ROUTES.HOME}>
-            <Home />
-          </Route>
-          <Route exact path={ROUTES.SIGNUP}>
-            <SignUp />
-          </Route>
+          <Route exact path={ROUTES.HOME} component={Home}/>
+          <Route path={ROUTES.SIGNUP} component={SignUp}/>
         </Switch>
       </BrowserRouter>
     </>
   );
 }
-
 export default App;
