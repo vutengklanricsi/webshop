@@ -15,7 +15,7 @@ export const Frame = styled.div`
 export const Base = styled.form`
   display: flex;
   flex-direction: column;
-  background-color: #693614;
+  background-color: #503004;
 	margin: 0 300px;
 	border-radius: 10px;
 `;
@@ -27,6 +27,10 @@ export const Input = styled.input`
   margin: 10px auto;
   padding: 10px;
 	flex-wrap: wrap;
+	${'' /* background-color: #B16A33; */}
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Button = styled.button`
@@ -37,6 +41,10 @@ export const Button = styled.button`
 	border-radius: 10px;
 	color: white;
 	background-color: #B16A33;
+  &:hover {
+    transition: color 0.5s ease-out;
+    color: #693614;
+  }
 `;
 
 export const Text = styled.label``;
