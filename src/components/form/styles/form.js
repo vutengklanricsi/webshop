@@ -15,7 +15,7 @@ export const Frame = styled.div`
 export const Base = styled.form`
   display: flex;
   flex-direction: column;
-  background-color: #a7f028;
+  background-color: #693614;
 	margin: 0 300px;
 	border-radius: 10px;
 `;
@@ -35,6 +35,8 @@ export const Button = styled.button`
   width: 120px;
 	margin-bottom: 50px;
 	border-radius: 10px;
+	color: white;
+	background-color: #B16A33;
 `;
 
 export const Text = styled.label``;
