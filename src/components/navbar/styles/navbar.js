@@ -19,4 +19,5 @@ export const Item = styled.div`
 
 export const StyleLink = styled(Link)`
 	text-decoration: none;
+	color: #fff;
 `
