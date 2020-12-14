@@ -1,8 +1,9 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro';
 
 export const Frame = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
 `;
 
 export const Input = styled.input``;
@@ -13,3 +14,6 @@ export const Text = styled.p``;
 
 export const Title = styled.p``;
 
+export const Break = styled.br`
+    padding: 10px;
+`;

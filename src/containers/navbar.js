@@ -6,7 +6,7 @@ export const NavbarContainer = () => {
   return (
     <Navbar>
       {NavbarItems.map((item) => {
-        console.log(item);
+        {/* console.log(item); */}
         return (
           <Navbar.Item key={item.id}>
             <Navbar.StyleLink to={item.Route}>
