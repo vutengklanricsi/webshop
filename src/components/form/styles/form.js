@@ -42,7 +42,7 @@ export const Button = styled.button`
 	color: white;
 	background-color: #B16A33;
   &:hover {
-    transition: color 0.5s ease-out;
+    transition: color 0.5s ease;
     color: #693614;
   }
 `;
