@@ -1,9 +1,16 @@
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
-export const Title = styled.div``;
+export const Frame = styled.div`
+    display: flex;
+    justify-content: center;
+`;
 
-export const Frame = styled.div``;
+export const Item = styled.div`
+    margin: 0 10px;
+`
+
+export const Title = styled.h2``;
 
 export const Text = styled.p``;
 

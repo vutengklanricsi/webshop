@@ -16,7 +16,7 @@ export default function SignIn() {
     <>
       <Form>
         <Form.Base method="POST" onSubmit={handleSignUp}>
-          <Form.Title>Sign In</Form.Title>
+          <Form.Title>Log In</Form.Title>
           <Form.Input
             placeholder="Email Address"
             value={emailAddress}
@@ -35,7 +35,7 @@ export default function SignIn() {
             data-submit-inputs="sign-up"
             disabled={isInvalid}
           >
-            Sign In
+            Log in
           </Form.Button>
         </Form.Base>
       </Form>
