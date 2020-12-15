@@ -1,5 +1,5 @@
 import React from 'react';
-import { Frame, Text, Picture, Title, DetailLink, Item, } from './styles/card';
+import { Frame, Text, Picture, Title, DetailLink, Item } from './styles/card';
 
 export default function Card({ children, ...restProps }) {
   return <Frame {...restProps}>{children}</Frame>;
