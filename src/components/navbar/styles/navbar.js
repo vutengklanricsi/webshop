@@ -16,7 +16,7 @@ export const Item = styled.div`
   flex-grow: wrap;
   color: #fff;
   text-decoration: none;
-  transition: padding 1s ease;
+  transition: padding 0.5s ease;
   &:hover {
 	padding: 30px
   }

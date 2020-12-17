@@ -5,7 +5,6 @@ export const Frame = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #0d2e00;
 `;
 
 export const Item = styled.div`
@@ -16,6 +15,11 @@ export const Item = styled.div`
   border: 3px solid white;
   border-radius: 10px;
   text-align: center;
+  transition: padding 0.2s;
+
+  &:hover {
+    padding: 50px 50px 20px 50px;
+  }
 `;
 
 export const Title = styled.h2`
