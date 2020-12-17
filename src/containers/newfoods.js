@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card } from '../components/index';
 import { Bowls } from '../products/pokibowls';
-import fef from "./fef.jpg"
+import fef from './fef.jpg';
+import * as ROUTES from '../constants/routes';
 
 export function NewFoods() {
   const showItems = Bowls.slice(0, 2);
@@ -10,15 +11,17 @@ export function NewFoods() {
       <Card>
         {showItems.map((foodItem) => {
           return (
-            <Card.Item key={foodItem.id}>
-              <Card.Picture
-                // src={`/products/pics/${foodItem.pictureId}.jpg`}
-                src={fef}
-                alt={`${foodItem.name}`}
-              />
-              <Card.Title>{foodItem.name}</Card.Title>
-              {/* <Card.Text>{foodItem.text}</Card.Text> */}
-            </Card.Item>
+            <Card.Detail key={foodItem.id} to={ROUTES.PRODUCTS}>
+              <Card.Item>
+                <Card.Picture
+                  // src={`/products/pics/${foodItem.pictureId}.jpg`}
+                  src={fef}
+                  alt={`${foodItem.name}`}
+                />
+                <Card.Title>{foodItem.name}</Card.Title>
+                <Card.Text>{foodItem.intro}</Card.Text>
+              </Card.Item>
+            </Card.Detail>
           );
         })}
       </Card>

@@ -18,7 +18,7 @@ export const Logo = styled.img`
   height: 50px;
 `;
 
-// Tisztelt  NEXT-Consulting Kft.!
+// Tisztelt NEXT-Consulting Kft.!
 // Gyakornok/Junior frontend fejlesztőként szeretnék elhelyezkedni a cégüknél.
 // Részese szeretnék lenni egy pozitív csapathoz ahol többet tudok fejlődni és értékes tagja lenni.
 

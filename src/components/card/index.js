@@ -5,13 +5,9 @@ export default function Card({ children, ...restProps }) {
   return <Frame {...restProps}>{children}</Frame>;
 }
 
-Card.Item = function CardItem({ children, ...restProps}) {
-    return (
-        <Item {...restProps}>
-            {children}
-        </Item>
-    )
-}
+Card.Item = function CardItem({ children, ...restProps }) {
+  return <Item {...restProps}>{children}</Item>;
+};
 
 Card.Text = function CardText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
@@ -30,5 +26,5 @@ Card.Title = function CardTitle({ children, ...restProps }) {
 };
 
 Card.Detail = function CardDetail({ children, ...restProps }) {
-  <DetailLink {...restProps}>{children}</DetailLink>;
+  return <DetailLink {...restProps}>{children}</DetailLink>;
 };

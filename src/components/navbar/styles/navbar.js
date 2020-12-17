@@ -19,8 +19,6 @@ export const Item = styled.div`
   transition: padding 1s ease;
   &:hover {
 	padding: 30px
-	${'' /* transform: scale(1.5); */}
-	${'' /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */}
   }
 `;
 
