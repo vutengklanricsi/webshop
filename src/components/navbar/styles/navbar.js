@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   ${'' /* flex-direction: center; */}
   justify-content: center;
-  background-color: #503004;
+  background-color: #E8500A;
   flex-wrap: wrap;
 `;
 

@@ -8,7 +8,7 @@ export const Frame = styled.div`
 `;
 
 export const Item = styled.div`
-  background-color: #503004;
+  background-color: #E8500A;
   padding: 40px 40px 15px 40px;
   display: block;
   margin: 60px 40px;

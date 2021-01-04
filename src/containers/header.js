@@ -10,7 +10,7 @@ export function HeaderContainer() {
       <Header>
         <Header.Container>
           <Header.Logo alt="healthy life logo" src={logo1} to={ROUTES.HOME} />
-          <p>fwjekfbkwefbkj</p>
+          <strong>Red Panda Poki Bowl</strong>
         </Header.Container>
       </Header>
       <NavbarContainer />

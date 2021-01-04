@@ -14,8 +14,8 @@ export const Background = styled.div`
 
 export const Logo = styled.img`
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 `;
 
 // Tisztelt NEXT-Consulting Kft.!
@@ -25,3 +25,6 @@ export const Logo = styled.img`
 // Vuong Tan Quang Richard
 // richard.vuongtanquang@gmail.com
 // +36302734643
+
+// Dear ,
+// I would like to apply  as junior/intern developer
