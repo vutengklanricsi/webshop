@@ -1,5 +1,6 @@
 import { React, useState } from 'react';
 import { Form } from '../components/index';
+import { useHistory } from 'react-router-dom'
 
 export default function SignUp() {
   const [name, setName] = useState('');
@@ -7,6 +8,7 @@ export default function SignUp() {
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
   const [address, setAddress] = useState('');
+  const history = useHistory();
 
   const isInvalid =
     password === '' ||
@@ -20,6 +22,11 @@ export default function SignUp() {
     console.log('name', name, nickname, emailAddress, password, address);
   };
   // const [passwordConfirm, setPasswordConfirm] = useState
+
+  const HandleBackHome = () => {
+    history.push('/');
+  };
+
   return (
     <>
       <Form>
@@ -53,9 +60,16 @@ export default function SignUp() {
             onChange={({ target }) => setAddress(target.value)}
           />
           <Form.Break />
-          <Form.Button type="submit" data-submit-inputs="sign-up" disabled={isInvalid}>
+          <Form.Button
+            type="submit"
+            data-submit-inputs="sign-up"
+            disabled={isInvalid}
+          >
             Sign Up
           </Form.Button>
+          <Form.BackButton type="button" onClick={HandleBackHome}>
+            back
+          </Form.BackButton>
         </Form.Base>
       </Form>
     </>

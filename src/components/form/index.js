@@ -7,6 +7,7 @@ import {
   Input,
   Break,
   Base,
+  BackButton,
 } from './styles/form';
 
 export default function Form({ children, ...restProps }) {
@@ -36,3 +37,11 @@ Form.Title = function FormInput({ children, ...restProps }) {
 Form.Break = function FormBreak({ ...restProps }) {
   return <Break {...restProps}></Break>;
 };
+
+Form.BackButton = function FormBackButton({ children, ...restProps }) {
+  return(
+    <BackButton {...restProps}>
+      {children}
+    </BackButton>
+  )
+}

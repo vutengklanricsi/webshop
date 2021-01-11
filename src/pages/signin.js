@@ -1,9 +1,11 @@
 import { React, useState } from 'react';
 import { Form } from '../components/index';
+import { useHistory } from 'react-router-dom';
 
 export default function SignIn() {
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
+  const history = useHistory();
 
   const isInvalid = password === '' || emailAddress === '';
 
@@ -12,6 +14,11 @@ export default function SignIn() {
     console.log(emailAddress, password);
   };
   // const [passwordConfirm, setPasswordConfirm] = useState
+
+  const HandleBackHome = () => {
+    history.push('/');
+  };
+
   return (
     <>
       <Form>
@@ -37,6 +44,9 @@ export default function SignIn() {
           >
             Log in
           </Form.Button>
+          <Form.BackButton type="button" onClick={HandleBackHome}>
+            back
+          </Form.BackButton>
         </Form.Base>
       </Form>
     </>
