@@ -1,10 +1,11 @@
-import React from 'react'
-import { Slider } from '../components/index'
+import React from 'react';
+import { Slider } from '../components/index';
 
 export function SliderContainer() {
-    return (
-        <Slider>
-            HAHAHAHA
-        </Slider>
-    )
+  return (
+    <>
+      <Slider>HAHAHAHA</Slider>
+      <Slider.Text>huehu</Slider.Text>
+    </>
+  );
 }
