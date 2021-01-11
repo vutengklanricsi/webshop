@@ -1,11 +1,19 @@
-import React from 'react';
-import { Frame, Item } from '../styles/footer';
+import styled from 'styled-components/macro';
+import { Link } from 'react-router-dom';
 
-export default function Footer({ children, ...restProps }) {
-  return <Frame {...restProps}>{children}</Frame>;
-}
 
-Footer.Item = function FooterItem({ children, ...restProps }) {
-  return <Item {...restProps}>{children}</Item>;
-};
+export const Frame = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
+export const Item = styled(Link)`
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+`;
+
+export const Icon = styled.button`
+  text-decoration: none;
+  color: white;
+`;

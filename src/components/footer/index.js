@@ -1,9 +1,18 @@
-import styled from 'styled-components/macro';
+import React from 'react';
+import { Frame, Item, Icon } from './styles/footer';
 
-export const Frame = styled.div`
-  display: flex;
-`;
+export default function Footer({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
+}
 
-export const Item = styled.div`
-	display: flex;
-`;
+Footer.Item = function FooterItem({ children, ...restProps }) {
+    return (
+        <Item {...restProps}>{children}</Item>
+    )
+}
+
+Footer.Icon = function FooterIcon({ children, ...restProps }) {
+    return (
+        <Icon {...restProps}>{children}</Icon>
+    )
+}
